@@ -1,0 +1,127 @@
+/* typography */
+
+h2, h3, h4, h5, h6, label {
+	letter-spacing: 1px;
+}
+
+$green: #7ac142;
+
+
+#join {
+	
+	display:none;
+}
+a {
+	color:#000;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#000;
+	font-weight:600;
+}
+
+#the-cacophony-project {
+	background-color:$green;
+	h2,h4,p {
+		color:#FFF;
+	}
+
+	h2,h4 {
+		margin:0 0 1.5rem 0;
+	}
+	#opening-copy {
+		padding-left:1.5rem;
+	}
+}
+
+#listening-here {
+	background-color:#ececec;
+}
+
+#call-out {
+	background-color:$green;
+	h2 {
+		font-size:1.9rem;
+	}
+}
+
+a.hero-jump.button {
+	display: block;
+	width: 62px;
+	height: 63px;
+	background: #848484 url("../img/up-arrow.png") no-repeat center center;
+	position: absolute;
+	top: -62px;
+	left: 39%; /* 485px 
+	left: 50%; */
+	z-index:1;
+}
+
+.black {
+	background-color: #2F2F2F !important;
+}
+
+body>section p a {
+	font-weight: bold;
+}
+
+body>section:not(#menu):not(#hero) {
+	padding: 30px 0 40px;
+}
+
+.stripe {
+	background: #f6f6f0;
+}
+
+@media #{$medium-up} { 
+
+a.hero-jump.button {
+	left: 45%;
+}
+
+}
+
+@media #{$large-up} { 
+
+#join {
+	display:inline;
+	position:fixed;
+	right:40px;
+	top:700px;
+	z-index:9999;
+
+	#join-inner {
+	  background: #000;
+	  border-radius: 50%;
+	  width: 110px;
+	  height: 110px;
+	  h4 {color:#FFF};
+	  text-align: center;
+	  margin-bottom: 1rem;
+	  padding-top: 16px;
+	  cursor:pointer;
+	}
+}
+
+
+}
+
+
+@media #{$xxlarge-up} { 
+
+
+}
+
+@media print { 
+ 	/* All print styles go here */
+ 	#header, #footer, #nav, #header-holder, #footer-container { 
+ 		display: none !important; 
+ 	}
+
+ 	body {
+ 		color: #000 !important; 
+      box-shadow: none !important;
+      text-shadow: none !important;
+     }
+}

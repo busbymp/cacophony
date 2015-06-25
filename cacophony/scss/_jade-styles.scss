@@ -1,0 +1,104 @@
+//  colour palette
+
+$green: #3fae2a;
+$jmt-blue: #0074c8;
+$lime: #c4d20e;
+$yellow: #ffce00;
+$orange: #ffa400;
+$dark-orange: #ff6b00;
+$orange-red: #d3461e;
+$red: #ef3741;
+$light-blue: #00bfd6;
+$stripe-background: #f2f2f2;
+$navy: #025088;
+
+.green {
+	background: $green;
+}
+
+.lime {
+	background: $lime;
+}
+
+.light-blue {
+	background: $light-blue;
+}
+
+.jmt-blue {
+	background: $jmt-blue;
+}
+
+.orange {
+	background: $orange;
+}
+
+.dark-blue {
+	background: $jmt-blue;
+}
+
+.red {
+	background: $red;
+}
+
+.yellow {
+	background: $yellow;
+}
+
+.selected, .top-bar-section ul li > a.selected {
+   font-weight: bold;
+}
+
+@mixin linksColor($color){
+	#hero,
+	section.reversal,
+	.button,
+	button,
+	.carousel-chevron	{
+		background-color: $color;
+	}
+
+	>section:not(#header-nav):not(#footer-container) a:not(.button),
+	blockquote,
+	.contact a {
+		color: $color;
+	}
+	
+	dd.active a {
+		background-color: desaturate(lighten($color, 45%), 25%)
+	}
+}
+
+@mixin showcase($color, $min-height){
+	.showcase {
+		background-color: $color;
+		width: 100%;
+		
+		.content {
+			background-color: $color;
+			padding: 1rem 1.5rem;
+		}
+		
+		p, h3 {
+			color: #fff !important;
+		}
+		
+		@media #{$medium-up} { 
+			background-position: top right;
+			background-repeat: no-repeat;
+			min-height: $min-height;
+			
+			.content {
+				min-height: $min-height;
+			}
+		}
+	}
+	
+	.showcase.flip {
+		background-position: top left;
+		@media #{$medium-up} { 
+			.content {
+				float: right;
+			}
+		}
+	}
+}

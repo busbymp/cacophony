@@ -1,0 +1,47 @@
+/* Footer styles */
+/* app.scss imports this file */
+
+#footer-container {
+
+	background:#555555;
+	padding-top: 50px;
+
+	h3, p {
+		color: #FFF;
+		letter-spacing: 1px;
+	}
+
+	p {
+		font-weight:300;
+		font-size: 0.9rem !important;
+		margin-bottom: 1.5rem;
+	}
+
+	a {
+		color:#a1d2cd;
+	}
+}
+
+@media #{$small-only} { 
+
+	#footer-container {
+		
+	}
+}
+
+@media #{$medium-up} {
+
+	#footer-container {
+		
+		padding: 45px 0 30px 0;
+		
+
+	}
+}
+
+@media #{$large-up} {
+	#footer-container {
+
+	}
+	
+}
