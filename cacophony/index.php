@@ -93,7 +93,7 @@
 			<h4><a href="">Buy a Cacophonometer</a> so we can start collecting data in your area - the more data we have the better. </h4>
 		</div>
 		<div class="small-12 medium-6 columns">
-			<img src="/cacophony/img/nz-locations.png">
+			<img src="/cacophony/img/nzmap.png">
 		</div>
 	</div>
 </section>
